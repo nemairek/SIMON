@@ -13,6 +13,10 @@ body {
     margin: 250px;
 }
 
+h2 {
+    color: gold;
+}
+
 .color{
     display: flex;
     flex-wrap: wrap;
@@ -71,5 +75,16 @@ body {
     border-radius: 2px;
     height: 40px;
     width: 90px;
+    align-content: center;
+}
+
+.score{
+    display: flex;
+    height: 100px;
+    width: 600px;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 3px solid rgb(0, 0, 0);
     align-content: center;
 }
