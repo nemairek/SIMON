@@ -1,6 +1,6 @@
 /*-------------- Constants -------------*/
 // const winSnd = 
-const catSays = new Audio("../audio/cat.mp3")
+const catSays = new Audio("Audio/080047_lose_funny_retro_video-game-80925.mp3")
 
 /*---------- Variables (state) ---------*/
 let simonsSequence = []
@@ -139,8 +139,7 @@ const simonsequenceRender = (target) => {
 
 SIMON.addEventListener('click', (event) => {
     const target = event.target;
-    catSays.volume = .05
-    catSays.play()
+  
 if (target.classList.contains('START')) {   
     score = 0
     scoreEL.textContent = `roundwins:${score}` 
@@ -149,6 +148,8 @@ if (target.classList.contains('START')) {
     playersSequence = []
     simonsSequence = []
     simonsequenceRender(target)
+    catSays.volume = 1
+    catSays.play()
 }
 })
 
