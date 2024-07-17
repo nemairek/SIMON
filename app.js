@@ -1,7 +1,10 @@
 /*-------------- Constants -------------*/
 // const winSnd = 
-const catSays = new Audio("Audio/080047_lose_funny_retro_video-game-80925.mp3")
-
+const loseSfx = new Audio("Audio/080047_lose_funny_retro_video-game-80925.mp3")
+const redSfx = new Audio("Audio/ding-126626.mp3")
+const greenSfx = new Audio("Audio/ding-101492.mp3")
+const blueSfx = new Audio("Audio/ding-101377.mp3")
+const yellowSfx = new Audio("Audio/notification1.mp3")
 /*---------- Variables (state) ---------*/
 let simonsSequence = []
 let playersSequence = []
@@ -25,6 +28,8 @@ let numberGen = [1,2,3,4]
 const render = () => {
     scoreEL.textContent = `roundwins:${score}` 
     if (loser) {
+        loseSfx.volume = .5
+        loseSfx.play()
         loseMsg.textContent = 'You Lose'
     }
 }
@@ -54,6 +59,7 @@ if (event.target.classList.contains('yellowButton')) {
     setTimeout(dimColor4,200)
 }
     winCondition()
+    // setTimeout(render,100)
     render()
 }
 
@@ -78,15 +84,21 @@ const generateRandomNumbers = () => {
 
 const changeColor1 = () => {
   redButtonEL.style.backgroundColor = "red"
+  redSfx.volume = .5
+  redSfx.play()
  
 }
 
 const changeColor2 = () => {
   greenButtonEL.style.backgroundColor = "green"
+  greenSfx.volume = .5
+  greenSfx.play()
 }
 
 const changeColor3 = () => {
     blueButtonEL.style.backgroundColor = "blue"
+    blueSfx.volume = .5
+    blueSfx.play()
 }
     
 
@@ -108,7 +120,9 @@ const dimColor3 = () => {
 
 const dimColor4 = () => {
     yellowButtonEL.style.backgroundColor = "rgb(60, 60, 0)"
-};
+    yellowSfx.volume = .5
+    yellowSfx.play()
+}
 
 const simonsequenceRender = (target) => {
     let randomNum = generateRandomNumbers()
@@ -147,10 +161,25 @@ if (target.classList.contains('START')) {
     loser = null
     playersSequence = []
     simonsSequence = []
-    simonsequenceRender(target)
-    catSays.volume = 1
-    catSays.play()
+    simonsequenceRender(target) 
 }
+if (target.classList.contains('redButton')) {
+    redSfx.volume = .5
+    redSfx.play()
+}
+ if (target.classList.contains('greenButton')) {
+    greenSfx.volume = .5
+    greenSfx.play()
+}  
+ if (target.classList.contains('blueButton')) {
+    blueSfx.volume = .5
+    blueSfx.play()
+}  
+ if (target.classList.contains('yellowButton')) {
+    yellowSfx.volume = .5
+    yellowSfx.play()
+};
+
 })
 
 redButtonEL.addEventListener('click', handleClick)
