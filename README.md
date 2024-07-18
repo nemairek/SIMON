@@ -12,7 +12,7 @@
 
   ##### Kuziva Nemaire
 
-  [![LinkedIn Badge](https://img.shields.io/badge/-@amarpan-blue?style=flat&logo=Linkedin&logoColor=black)](https://www.linkedin.com/in/amarpan/)
+  [![LinkedIn Badge](https://img.shields.io/badge/-@kuzivanemaire-blue?style=flat&logo=Linkedin&logoColor=black)](https://www.linkedin.com/in/kuziva-nemaire-4b03a3191/)
 
   ## :keyboard: Description
 
