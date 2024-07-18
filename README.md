@@ -22,9 +22,44 @@
 
   ## :camera_flash: Screenshot
 
- <img
-    src= https://nemairek.github.io/SIMON/
-    width="700"
-  /> 
+ <img src =
+    ![alt text](image-1.png)
+  />
  
-<!-- ![alt text](image.png) -->
+  ## :computer: Technologies Used
+  A screenshot of your app's landing page and any other screenshots of interest.
+
+  
+  ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)
+  ![HTML5](https://img.shields.io/badge/-HTML5-05122A?style=flat&logo=html5)
+  ![CSS3](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=css3)
+  ![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git)
+  ![Github](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)
+  ![VSCode](https://img.shields.io/badge/-VS_Code-05122A?style=flat&logo=visualstudio)
+  
+## :fire: Getting Started
+
+
+<details open>
+  <summary> Planning </summary>
+ <summary> Deployed Link (Note) </summary>
+  <a href="https://trello.com/b/0Ge4XDzK/simon-planning"
+    > "https://trello.com/b/0Ge4XDzK/simon-planning </a
+  >
+
+</details>
+
+<details open>
+  <summary> Deployed Link (SIMON) </summary>
+  <a href="https://nemairek.github.io/SIMON/"
+    > https://nemairek.github.io/SIMON/ </a
+  >
+</details>
+
+## :satellite: Upcoming Features
+
+- [:x:] Improve/ Reassign button sound effects
+
+- [:x:] add a highscore function
+
+- [:x:] possible redesign of layout
