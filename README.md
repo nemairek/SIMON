@@ -19,3 +19,12 @@
  Simon is a simple touch game in which the player will attempt to recreate the sequence of colors displayed by the game in order. When the player succesfully recreates a sequence they will be given a longer sequence until they fail to and are prompted with a you lose message.
 
   </div>
+
+  ## :camera_flash: Screenshot
+
+ <img
+    src= https://nemairek.github.io/SIMON/
+    width="700"
+  /> 
+ 
+<!-- ![alt text](image.png) -->
