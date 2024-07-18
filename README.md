@@ -41,8 +41,7 @@
 
 
 <details open>
-  <summary> Planning </summary>
- <summary> Deployed Link (Note) </summary>
+ <summary> Planning </summary>
   <a href="https://trello.com/b/0Ge4XDzK/simon-planning"
     > "https://trello.com/b/0Ge4XDzK/simon-planning </a
   >
