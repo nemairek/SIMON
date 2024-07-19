@@ -1,29 +1,24 @@
-/*-------------- Constants -------------*/
-// const winSnd = 
+            
 const loseSfx = new Audio("Audio/080047_lose_funny_retro_video-game-80925.mp3")
 const redSfx = new Audio("Audio/ding-126626.mp3")
 const greenSfx = new Audio("Audio/ding-101492.mp3")
 const blueSfx = new Audio("Audio/ding-101377.mp3")
 const yellowSfx = new Audio("Audio/notification1.mp3")
-/*---------- Variables (state) ---------*/
+
 let simonsSequence = []
 let playersSequence = []
 let score = 0
 let loser = null
-/*----- Cached Element References  -----*/
+let numberGen = [1,2,3,4]
+
 let redButtonEL = document.querySelector('.redButton')
 let yellowButtonEL = document.querySelector('.yellowButton')
 let greenButtonEL = document.querySelector('.greenButton')
 let blueButtonEL = document.querySelector('.blueButton')
 let scoreEL = document.querySelector('.score')
 let loseMsg = document.querySelector('h2')
-/*-------------- Functions -------------*/
 
 
-/*----------- Event Listeners ----------*/
-
-
-let numberGen = [1,2,3,4]
 
 const render = () => {
     scoreEL.textContent = `roundwins:${score}` 
@@ -59,7 +54,6 @@ if (event.target.classList.contains('yellowButton')) {
     setTimeout(dimColor4,200)
 }
     winCondition()
-    // setTimeout(render,100)
     render()
 }
 
